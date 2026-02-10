@@ -1,0 +1,26 @@
+CMakeFiles/library_queue_system.dir/src/statistics.c.obj: \
+ C:\Users\user\Desktop\Library\src\statistics.c \
+ C:/Users/user/Desktop/Library/include/statistics.h \
+ C:/Users/user/Downloads/x86_64-8.1.0-release-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/time.h \
+ C:/Users/user/Downloads/x86_64-8.1.0-release-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
+ C:/Users/user/Downloads/x86_64-8.1.0-release-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw.h \
+ C:/Users/user/Downloads/x86_64-8.1.0-release-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
+ C:/Users/user/Downloads/x86_64-8.1.0-release-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
+ C:/Users/user/Downloads/x86_64-8.1.0-release-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/vadefs.h \
+ C:/Users/user/Downloads/x86_64-8.1.0-release-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
+ C:/Users/user/Downloads/x86_64-8.1.0-release-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+ C:/Users/user/Downloads/x86_64-8.1.0-release-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_timeval.h \
+ C:/Users/user/Downloads/x86_64-8.1.0-release-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
+ C:/Users/user/Downloads/x86_64-8.1.0-release-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
+ C:/Users/user/Downloads/x86_64-8.1.0-release-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
+ C:/Users/user/Desktop/Library/include/persistence.h \
+ C:/Users/user/Desktop/Library/include/reader.h \
+ C:/Users/user/Desktop/Library/include/queue.h \
+ C:/Users/user/Downloads/x86_64-8.1.0-release-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/stdio.h \
+ C:/Users/user/Downloads/x86_64-8.1.0-release-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw_print_push.h \
+ C:/Users/user/Downloads/x86_64-8.1.0-release-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
+ C:/Users/user/Downloads/x86_64-8.1.0-release-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
+ C:/Users/user/Downloads/x86_64-8.1.0-release-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+ C:/Users/user/Downloads/x86_64-8.1.0-release-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h \
+ C:/Users/user/Downloads/x86_64-8.1.0-release-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/string.h \
+ C:/Users/user/Downloads/x86_64-8.1.0-release-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h
