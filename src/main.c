@@ -9,7 +9,13 @@ ServiceWindow g_windows[MAX_WINDOWS];
 int g_windowCount = MAX_WINDOWS;
 
 int main() {
-    // 初始化系统
+    // ====== 添加这4行代码 ======
+    // 设置控制台为中文编码
+    system("chcp 936 > nul");  // GBK编码
+    SetConsoleOutputCP(936);    // Windows API设置输出
+    SetConsoleCP(936);          // Windows API设置输入
+    
+    // 原来的代码继续...
     g_system = createLibrarySystem();
     if (!g_system) {
         fprintf(stderr, "系统初始化失败！\n");
