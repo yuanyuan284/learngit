@@ -1,2 +1,4 @@
 learn abc
 ABC
+^w^
+QwQ
