@@ -4,10 +4,17 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
+// 跨平台兼容处理
+#ifdef _WIN32
 #include <windows.h>
+#endif
 
 void displayMainMenu() {
-    system("cls");
+    #ifdef _WIN32
+        (void)system("cls");
+    #else
+        (void)system("clear");
+    #endif
     printf("\n========== 图书馆排队管理系统 ==========\n");
     printf("1. 读者管理\n");
     printf("2. 排队取号\n");
@@ -39,7 +46,11 @@ void displayWindowMenu() {
 }
 
 void clearScreen() {
-    system("cls");
+    #ifdef _WIN32
+        (void)system("cls");
+    #else
+        (void)system("clear");
+    #endif
 }
 
 void waitForEnter() {
@@ -103,9 +114,15 @@ void callNextReader(LibrarySystem* system, ServiceWindow windows[], int windowId
     
     printf("排队号码: %d\n", nextRecord->queueNumber);
     
-    // Windows系统提示音
-    Beep(1000, 300);
-    Beep(1200, 300);
+    // 跨平台提示音
+    #ifdef _WIN32
+        Beep(1000, 300);
+        Beep(1200, 300);
+    #else
+        // Linux系统可以使用printf输出提示音字符
+        printf("\a"); // 响铃
+        printf("\a"); // 响铃
+    #endif
     
     free(nextRecord);
 }

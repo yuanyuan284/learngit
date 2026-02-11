@@ -15,8 +15,13 @@ void displayStatistics(LibrarySystem* system) {
     printf("选择: ");
     
     int choice;
-    scanf("%d", &choice);
-    getchar();
+    if (scanf("%d", &choice) != 1) {
+        printf("输入错误，请重新输入！\n");
+        while (getchar() != '\n'); // 清空输入缓冲区
+        choice = 0;
+    } else {
+        getchar(); // 清空换行符
+    }
     
     switch (choice) {
         case 1:

@@ -9,11 +9,14 @@ ServiceWindow g_windows[MAX_WINDOWS];
 int g_windowCount = MAX_WINDOWS;
 
 int main() {
-    // ====== 添加这4行代码 ======
     // 设置控制台为中文编码
-    system("chcp 936 > nul");  // GBK编码
-    SetConsoleOutputCP(936);    // Windows API设置输出
-    SetConsoleCP(936);          // Windows API设置输入
+    // Linux系统默认支持UTF-8编码，无需额外设置
+    // 以下是跨平台兼容的设置
+    #ifdef _WIN32
+        system("chcp 936 > nul");  // GBK编码
+        SetConsoleOutputCP(936);    // Windows API设置输出
+        SetConsoleCP(936);          // Windows API设置输入
+    #endif
     
     // 原来的代码继续...
     g_system = createLibrarySystem();
@@ -33,14 +36,22 @@ int main() {
     
     do {
         displayMainMenu();
-        scanf("%d", &choice);
+        if (scanf("%d", &choice) != 1) {
+            printf("输入错误，请重新输入！\n");
+            while (getchar() != '\n'); // 清空输入缓冲区
+            continue;
+        }
         getchar();  // 清除输入缓冲
         
         switch (choice) {
             case 1:  // 读者管理
                 do {
                     displayReaderMenu();
-                    scanf("%d", &subChoice);
+                    if (scanf("%d", &subChoice) != 1) {
+                        printf("输入错误，请重新输入！\n");
+                        while (getchar() != '\n'); // 清空输入缓冲区
+                        continue;
+                    }
                     getchar();
                     
                     switch (subChoice) {
@@ -74,7 +85,11 @@ int main() {
             case 3:  // 服务窗口
                 do {
                     displayWindowMenu();
-                    scanf("%d", &subChoice);
+                    if (scanf("%d", &subChoice) != 1) {
+                        printf("输入错误，请重新输入！\n");
+                        while (getchar() != '\n'); // 清空输入缓冲区
+                        continue;
+                    }
                     getchar();
                     
                     switch (subChoice) {
@@ -82,7 +97,11 @@ int main() {
                             {
                                 int windowId;
                                 printf("请输入窗口ID (1-%d): ", g_windowCount);
-                                scanf("%d", &windowId);
+                                if (scanf("%d", &windowId) != 1) {
+                                    printf("输入错误，请重新输入！\n");
+                                    while (getchar() != '\n'); // 清空输入缓冲区
+                                    return;
+                                }
                                 getchar();
                                 if (windowId >= 1 && windowId <= g_windowCount) {
                                     // 注意：这里需要传递系统、窗口数组和窗口ID
@@ -94,7 +113,11 @@ int main() {
                             {
                                 int windowId;
                                 printf("请输入窗口ID (1-%d): ", g_windowCount);
-                                scanf("%d", &windowId);
+                                if (scanf("%d", &windowId) != 1) {
+                                    printf("输入错误，请重新输入！\n");
+                                    while (getchar() != '\n'); // 清空输入缓冲区
+                                    return;
+                                }
                                 getchar();
                                 if (windowId >= 1 && windowId <= g_windowCount) {
                                     completeCurrentService(g_system, g_windows, windowId);
@@ -105,7 +128,11 @@ int main() {
                             {
                                 int windowId;
                                 printf("请输入窗口ID (1-%d): ", g_windowCount);
-                                scanf("%d", &windowId);
+                                if (scanf("%d", &windowId) != 1) {
+                                    printf("输入错误，请重新输入！\n");
+                                    while (getchar() != '\n'); // 清空输入缓冲区
+                                    return;
+                                }
                                 getchar();
                                 if (windowId >= 1 && windowId <= g_windowCount) {
                                     cancelCurrentService(g_system, g_windows, windowId);

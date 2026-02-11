@@ -8,13 +8,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/user/Desktop/Library/src/main.c" "CMakeFiles/library_queue_system.dir/src/main.c.obj" "gcc" "CMakeFiles/library_queue_system.dir/src/main.c.obj.d"
-  "C:/Users/user/Desktop/Library/src/persistence.c" "CMakeFiles/library_queue_system.dir/src/persistence.c.obj" "gcc" "CMakeFiles/library_queue_system.dir/src/persistence.c.obj.d"
-  "C:/Users/user/Desktop/Library/src/queue.c" "CMakeFiles/library_queue_system.dir/src/queue.c.obj" "gcc" "CMakeFiles/library_queue_system.dir/src/queue.c.obj.d"
-  "C:/Users/user/Desktop/Library/src/reader.c" "CMakeFiles/library_queue_system.dir/src/reader.c.obj" "gcc" "CMakeFiles/library_queue_system.dir/src/reader.c.obj.d"
-  "C:/Users/user/Desktop/Library/src/service.c" "CMakeFiles/library_queue_system.dir/src/service.c.obj" "gcc" "CMakeFiles/library_queue_system.dir/src/service.c.obj.d"
-  "C:/Users/user/Desktop/Library/src/statistics.c" "CMakeFiles/library_queue_system.dir/src/statistics.c.obj" "gcc" "CMakeFiles/library_queue_system.dir/src/statistics.c.obj.d"
-  "C:/Users/user/Desktop/Library/src/window.c" "CMakeFiles/library_queue_system.dir/src/window.c.obj" "gcc" "CMakeFiles/library_queue_system.dir/src/window.c.obj.d"
+  "/home/user/project/learngit/src/main.c" "CMakeFiles/library_queue_system.dir/src/main.c.o" "gcc" "CMakeFiles/library_queue_system.dir/src/main.c.o.d"
+  "/home/user/project/learngit/src/persistence.c" "CMakeFiles/library_queue_system.dir/src/persistence.c.o" "gcc" "CMakeFiles/library_queue_system.dir/src/persistence.c.o.d"
+  "/home/user/project/learngit/src/queue.c" "CMakeFiles/library_queue_system.dir/src/queue.c.o" "gcc" "CMakeFiles/library_queue_system.dir/src/queue.c.o.d"
+  "/home/user/project/learngit/src/reader.c" "CMakeFiles/library_queue_system.dir/src/reader.c.o" "gcc" "CMakeFiles/library_queue_system.dir/src/reader.c.o.d"
+  "/home/user/project/learngit/src/service.c" "CMakeFiles/library_queue_system.dir/src/service.c.o" "gcc" "CMakeFiles/library_queue_system.dir/src/service.c.o.d"
+  "/home/user/project/learngit/src/statistics.c" "CMakeFiles/library_queue_system.dir/src/statistics.c.o" "gcc" "CMakeFiles/library_queue_system.dir/src/statistics.c.o.d"
+  "/home/user/project/learngit/src/window.c" "CMakeFiles/library_queue_system.dir/src/window.c.o" "gcc" "CMakeFiles/library_queue_system.dir/src/window.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
